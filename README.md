@@ -7,7 +7,9 @@ Simple CRUD system that performs :
 - Update product
 - Delete product
 
-## Technologies
+**🚀You can try it here:** https://sakr2000.github.io/CRUD-system/
+
+## Technologies 💻
 
 The used technologies in the project are :
 
@@ -16,8 +18,8 @@ The used technologies in the project are :
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-## Features
+## Features 
 
-1. **_Simple user interface_**
-2. **_Input validations_**
-3. **_Stores products on local storage so data is not lost when the page is refreshed or closed_**
+1. **_Simple user interface_** 🖥️
+2. **_Input validations_** ✔️
+3. **_Stores products on local storage so data is not lost when the page is refreshed or closed_** ♻️
