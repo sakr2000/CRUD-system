@@ -1,15 +1,30 @@
 .card {
-    transition: 0.5s;
-    border-color: #17a2b8;
+  transition: 0.5s;
+  border-color: #17a2b8;
 }
 
 .card:hover {
-    box-shadow: 10px 10px 80px 0px rgba(0, 0, 0, 0.45);
-    color: #17a2b8;
+  box-shadow: 10px 10px 80px 0px rgba(0, 0, 0, 0.45);
+  color: #17a2b8;
 }
 
 header .container {
-    margin-bottom: 30px;
-    padding: 5px;
-    border-bottom: #17a2b8 solid 1px;
+  margin-bottom: 30px;
+  padding: 5px;
+  border-bottom: #17a2b8 solid 1px;
+}
+
+.error {
+  color: #dc3545;
+  font-size: small;
+}
+.invalid {
+  color: #dc3545;
+}
+.input-box.invalid label {
+  color: #dc3545;
+}
+.input-box.invalid input {
+  color: #dc3545;
+  border: #dc3545 1px solid;
 }

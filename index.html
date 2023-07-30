@@ -1,48 +1,75 @@
 <html>
-
-<head>
+  <head>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="my-5 dropdown-header">
-        <div class="container text-center">
-            <h1>CRUD System</h1>
-        </div>
+      <div class="container text-center">
+        <h1>CRUD System</h1>
+      </div>
     </header>
 
     <div class="container my-5">
-        <div class="w-50 m-auto card p-5">
-            <label for="ProductName">ProductName:</label>
-            <input id="ProductName" type="text" class="form-control mb-lg-3" />
-            <label for="ProductCategory">ProductCategory:</label>
-            <input id="ProductCategory" type="text" class="form-control mb-lg-3" />
-            <label for="ProductPrice">ProductPrice:</label>
-            <input id="ProductPrice" type="text" class="form-control mb-lg-3" />
-            <label for="ProductDescription">ProductDescription:</label>
-            <input id="ProductDescription" type="text" class="form-control mb-lg-3" />
-            <button onclick="getData()" class="btn btn-info">Add Product</button>
+      <div class="w-50 m-auto card p-5">
+        <div class="input-area">
+          <div class="input-box" id="ProductName">
+            <label for="ProductName">ProductName</label>
+            <input type="text" class="form-control mb-lg-3" required />
+          </div>
+          <div class="error" id="error"></div>
         </div>
+
+        <div class="input-area">
+          <div class="input-box" id="ProductCategory">
+            <label for="ProductCategory">ProductCategory</label>
+            <input type="text" class="form-control mb-lg-3" required />
+          </div>
+          <div class="error" id="error"></div>
+        </div>
+
+        <div class="input-area">
+          <div class="input-box" id="ProductPrice">
+            <label for="ProductPrice">ProductPrice</label>
+            <input type="number" class="form-control mb-lg-3" required />
+          </div>
+          <div class="error" id="error"></div>
+        </div>
+
+        <div class="input-area">
+          <div class="input-box" id="ProductDescription">
+            <label for="ProductDescription">ProductDescription:</label>
+            <input type="text" class="form-control mb-lg-3" required />
+          </div>
+          <div class="error" id="error"></div>
+        </div>
+
+        <button id="add_product" class="btn btn-info">Add Product</button>
+      </div>
     </div>
 
     <div class="container">
-        <input onkeyup="Search()" id="search" class="form-control w-25 mx-auto my-5" type="text" placeholder="Search..." />
-        <table class="table table-hover text-center">
-            <thead>
-                <th>index</th>
-                <th>Name</th>
-                <th>Category</th>
-                <th>Price</th>
-                <th>description</th>
-                <th>delete</th>
-                <th>Update</th>
-            </thead>
-            <tbody id="table"></tbody>
-        </table>
+      <input
+        id="search"
+        class="form-control w-25 mx-auto my-5"
+        type="text"
+        placeholder="Search..."
+      />
+      <table class="table table-hover text-center">
+        <thead>
+          <th>index</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>description</th>
+          <th>delete</th>
+          <th>Update</th>
+        </thead>
+        <tbody id="table"></tbody>
+      </table>
     </div>
 
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
