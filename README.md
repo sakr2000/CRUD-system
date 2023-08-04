@@ -21,5 +21,6 @@ The used technologies in the project are :
 ## Features 
 
 1. **_Simple user interface_** 🖥️
-2. **_Input validations_** ✔️
 3. **_Stores products on local storage so data is not lost when the page is refreshed or closed_** ♻️
+2. **_Input validations_** ✔️
+3. **_Search the added products_**
